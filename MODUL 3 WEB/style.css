@@ -1,0 +1,68 @@
+main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    border: 3px solid rgb(37, 37, 37);
+}
+
+h1 {
+    color: red;
+    background-color: #48b4db;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* Gaya untuk kontainer formulir */
+.form-container {
+    margin: 0 auto;
+    background-color: gray;
+    padding: 10px 230px 100px 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid white;
+
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.form-group > label {
+    width: 50%;
+}
+
+.form-group > input {
+    width: 50%;
+}
+
+.form-comment {
+    background-color: rgb(214, 93, 93);
+    padding: 10px 10px 30px 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid white;
+}
+
+.form-group-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group-2 > textarea {
+    width: 60%;
+}
