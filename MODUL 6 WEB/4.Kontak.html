@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Hubungi Saya</h1>
+            <div class="form-container">
+                <h2>Data Diri</h2>
+                <form id="main-form">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">NIM</label>
+                        <input type="text" id="nim" name="nim">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal_lahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                        <div class="radio-buttons">
+                            <div>
+                                <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki">
+                                <label for="laki_laki">Laki-laki</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-comment">
+                <form id="comment-form">
+                    <div class="form-group-2">
+                        <label for="comment">Komentar Anda</label>
+                        <textarea name="comment" id="comment" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button type="reset">Reset</button>
+                        <button type="submit" id="submit-button">Submit</button>
+                        <a href="Beranda.html">
+                            <button type="button">Cancel</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div id="message" style="display:none; color: green;">Data Anda Telah Tersimpan</div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPhotography</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .portfolio-item.portrait {
+            width: 250px;
+            height: 490px;
+        }
+        .portfolio-item.landscape {
+            width: 250px;
+            height: 150px;
+        }
+        .portfolio-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 20px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .footer a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .footer a:hover {
+            color: #007bff;
+        }
+        .portfolio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .portfolio-row {
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            max-width: 1980px;
+            margin-bottom: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a>KzrPhoto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2.about me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="3.portofolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="4.Kontak.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center my-4">
+        <h1>Hi. Hello.. I Am Abdurrahman Gilang Harjuna...!</h1>
+        <p>I Read Manhwa To Get The Best Character Photos..!<br>
+           Reader Manhwa/ Traveler / Programmer</p>
+    </header>
+
+    <!-- Portfolio -->
+    <div class="container">
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-dark mx-1" onclick="filterSelection('all')">All</button>
+            <button class="btn btn-outline-dark mx-1" onclick="filterSelection('portrait')">Portrait</button>
+            <button class="btn btn-outline-dark mx-1" onclick="filterSelection('landscape')">Landscape</button>
+            <button class="btn btn-outline-dark mx-1" onclick="filterSelection('Product')">Product</button>
+        </div>
+        <div class="portfolio-container">
+            <!-- Portrait Rows -->
+            <div class="portfolio-row portrait">
+                <div class="portfolio-item portrait">
+                    <img src="Foto/1.jpg" alt="Photo 1">
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="Foto/2.jpg" alt="Photo 2">
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="Foto/3.jpg" alt="Photo 3">
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="Foto/4.jpg" alt="Photo 4">
+                </div>
+            </div>
+            <div class="portfolio-row portrait">
+                <div class="portfolio-item portrait">
+                    <img src="Foto/5.jpg" alt="Photo 5">
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="Foto/6.jpg" alt="Photo 6">
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="Foto/7.jpg" alt="Photo 7">
+                </div>
+                <div class="portfolio-item portrait">
+                    <img src="Foto/8.jpg" alt="Photo 8">
+                </div>
+            </div>
+            <!-- Landscape Rows -->
+            <div class="portfolio-row landscape">
+                <div class="portfolio-item landscape">
+                    <img src="Foto/9.jpg" alt="Photo 9">
+                </div>
+                <div class="portfolio-item landscape">
+                    <img src="Foto/10.jpg" alt="Photo 10">
+                </div>
+                <div class="portfolio-item landscape">
+                    <img src="Foto/11.jpg" alt="Photo 11">
+                </div>
+                <div class="portfolio-item landscape">
+                    <img src="Foto/12.jpg" alt="Photo 12">
+                </div>
+            </div>
+            <div class="portfolio-row landscape">
+                <div class="portfolio-item landscape">
+                    <img src="Foto/13.jpg" alt="Photo 13">
+                </div>
+                <div class="portfolio-item landscape">
+                    <img src="Foto/14.jpg" alt="Photo 14">
+                </div>
+                <div class="portfolio-item landscape">
+                    <img src="Foto/15.jpg" alt="Photo 15">
+                </div>
+                <div class="portfolio-item landscape">
+                    <img src="Foto/16.jpg" alt="Photo 16">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h1>KzrPhoto</h1>
+        <p>© Copyright 2024. SSS+ Character</p>
+        <p>
+            <a href="#" target="_blank"><i class="fab fa-facebook text-primary"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter text-info"></i></a>
+            <a href="https://www.instagram.com/harjunabdrhmn?utm_source=qr&igsh=dHo4cDBlZTcybmU0" target="_blank"><i class="fab fa-instagram text-danger"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github text-dark"></i></a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function filterSelection(filter) {
+            var rows = document.getElementsByClassName('portfolio-row');
+            for (var i = 0; i < rows.length; i++) {
+                if (filter === 'all') {
+                    rows[i].style.display = 'flex';
+                } else if (rows[i].classList.contains(filter)) {
+                    rows[i].style.display = 'flex';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+        // Initialize with showing all items
+        filterSelection('all');
+    </script>
+</body>
+</html>

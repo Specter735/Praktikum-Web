@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Blackadder;
+    src: url('Font/Blackadder\ ITC\ Std\ Regular.otf');
+}
+@font-face {
+    font-family: Matura;
+    src: url('Font/MATURASC_1.TTF');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(156, 30, 30);
+    color: black;
+    padding: 5px;
+    font-family: Blackadder;
+    font-size: 22px;
+}
+
+.content {
+    display: flex;
+}
+
+nav {
+    background-color: black;
+    padding: 40px;
+    width: 200px;
+    border: 1px solid rgb(170, 166, 166);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+    background-color: white;
+    border: 2px solid rgb(170, 166, 166);
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border: 2px solid rgb(170, 166, 166);
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.welcome-text {
+    flex: 2;
+    padding: 20px;
+    font-size: 26px;
+    font-family: Matura;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    border: 2px solid rgb(170, 166, 166);
+}
+
+footer p {
+    margin: 0;
+    font-family: broadway;
+}
